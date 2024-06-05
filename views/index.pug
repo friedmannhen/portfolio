@@ -3,9 +3,13 @@ extends layout.pug
 block content 
   article.grid-container.portfolio-intro.portfolio-heading
     div
-      h1 Portfolio
+      h1 Hen Friedmann | Portfolio
       p.lead.text-light
-        | Welcome to my portfolio! View more information about each project by clicking on an image. Feel free to get in touch. I would love to hear from you!
+        | Welcome!
+      p 
+        | This portfolio is developed using Express with Pug for templating.<br>
+        | View more information about each project by clicking on an image.<br><br>
+        | Feel free to get in touch. I would love to hear from you!
   article.grid-container.portfolio-index
     .grid-x.grid-margin-x.small-up-1.medium-up-2
       each val, index in data

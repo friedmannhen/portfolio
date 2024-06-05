@@ -256,12 +256,12 @@ Portfolio
   display: none; /* Initially hidden, will be shown via JavaScript */
 }
 .scroll-indicator-up {
-  top: 215px;
+  top: 260px;
   left: 885px;
 }
 
 .scroll-indicator-down {
-  bottom: 140px;
+  bottom: 90px;
   left: 885px;
 }
 
@@ -380,9 +380,6 @@ Media Queries
   .portfolio-intro {
     margin: 0;
     padding: 40px 50px 30px;
-  }
-  .portfolio-heading {
-    margin-bottom: 40px;
   }
   .portfolio-meta {
     padding-left: 20px;
