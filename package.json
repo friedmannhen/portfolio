@@ -1,0 +1,25 @@
+{
+  "name": "express-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio created with Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "11.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/friedmannhen/portfolio"
+  },
+  "author": "Hen Friedmann",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

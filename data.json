@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": "Angular-Todo",
+            "project_name": "Angular Todo app",
+            "description": ["This app was Developed with Angular, it is a Todo app used to orginize tasks, the app utlizes local storage to fake a data base, and kinda save your data even when you close the app.",
+                            " There are alot of small features like drag and drop to reorgnize the tasks list, mark tasks and subtasks as completed, copy and paset multiple lines when making new/updating a task and much more!"],
+            "technologies": [
+                "Angular",
+                "rxjs",
+                "SCSS",
+                "Angular Material"
+            ],
+            "live_link": "https://friedmann-ng-todo.netlify.app/",
+            "github_link": "https://github.com/friedmannhen/ToDoApp-Angular",
+            "image_urls": [
+                "/static/images/todoMain.png",
+                "/static/images/todo1.png",
+                "/static/images/todo2.png"
+            ]
+        },
+        {
+            "id": "Bingo",
+            "project_name": "Bingo",
+            "description":["This is a Bingo game developed for a company Happy Hour event. You'll notice the Iscar logo and our IT department's logo within the app.",
+                           "Note: This game was designed specifically for large screens, so it may not perform optimally on mobile devices."] ,
+            "technologies": [
+                "javaScript",
+                "html",
+                "css"
+            ],
+            "live_link": "https://665fec4da727e3a86a74838f--friedmann-bingo.netlify.app/",
+            "github_link": "https://github.com/friedmannhen/Bingo",
+            "image_urls": [
+                "/static/images/bingoMain.png",
+                "/static/images/bingo1.png",
+                "/static/images/bingo2.png"
+            ]
+        },
+        {
+            "id": "Sorting-Visualizer",
+            "project_name": "Sorting Visualizer",
+            "description": ["This is a sorting Visualizer! it help visualize a few sorting algorithms and make them more understandable."],
+            "technologies": [
+                "javaScript",
+                "html",
+                "css"
+            ],
+            "live_link": "https://friedmann-sorting-visualizer.netlify.app/",
+            "github_link": "https://github.com/friedmannhen/sorting-Visualizer",
+            "image_urls": [
+                "/static/images/sortMain.png",
+                "/static/images/sort1.png",
+                "/static/images/sort2.png"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro.portfolio-heading
+    div
+      h1 Portfolio
+      p.lead.text-light
+        | Welcome to my portfolio! View more information about each project by clicking on an image. Feel free to get in touch. I would love to hear from you!
+  article.grid-container.portfolio-index
+    .grid-x.grid-margin-x.small-up-1.medium-up-2
+      each val, index in data
+        .cell
+          a(href=`/project/${val.id}/${index}`)
+            img.image.link-image(src=`${val.image_urls[0]}`)
+            h5= val.project_name
+      div.scroll-indicator.scroll-indicator-up
+        i.fas.fa-chevron-up.fa-fade
+      div.scroll-indicator.scroll-indicator-down
+        i.fas.fa-chevron-down.fa-fade
+

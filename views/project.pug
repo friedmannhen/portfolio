@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        h1= data[index].project_name
+        each val in data[index].description
+          p.lead.text-light= val
+        p You're more than welcome to try it by pressing Live Demo 
+          i.fas.fa-globe-americas
+
+
+      .cell.portfolio-meta.small-12.medium-2.large-3
+        h6 Technologies
+        ul.list
+          each val in data[index].technologies
+            li= val 
+        a.portfolio-link(href=`${data[index].live_link}`, target="_blank") 
+          i.fas.fa-globe-americas.fa-bounce 
+          | Live Demo
+        a.portfolio-link(href=`${data[index].github_link}`, target="_blank") 
+          i.fab.fa-github 
+          | GitHub Repo
+    .grid-container
+      .grid-x.grid-margin-x.large-up-2
+        each val in data[index].image_urls
+          .cell
+            img.image(src=`${val}`)
+
+

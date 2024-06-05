@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(class="no-js" lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Hen Friedmann | Portfolio 
+    link(href="/static/images/favicon.ico" rel="shortcut icon")
+    link(href='https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,700' rel='stylesheet')
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel='stylesheet' href='/static/css/foundation.css')
+    link(rel='stylesheet' href='/static/css/style.css')
+  body
+    #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
+      .grid-y.grid-padding-x(style='height: 100%;')
+        block sidebar
+          br
+          .cell.shrink
+            a(href="/")
+              img(src='/static/images/profile.png' alt='profile image')
+          .cell.auto
+            h5 Hen Friedmann
+            p.text-light
+              | I am a web developer in Israel. <br>
+              | I am passionate about building web applications and learning new things.
+            a(href='/about') 
+             span Learn More about me 
+             i.fa-regular.fa-face-smile-wink
+    .off-canvas-content(data-off-canvas-content='')
+      .title-bar.hide-for-large
+        .title-bar-left
+          button.menu-icon(type='button' data-toggle='my-info')
+          span.title-bar-title Hen Friedmann
+      block content   
+  script(src='/static/js/vendor/jquery.js')
+  script(src='/static/js/vendor/what-input.js')
+  script(src='/static/js/vendor/foundation.js')
+  script(src='/static/js/scripts.js')
