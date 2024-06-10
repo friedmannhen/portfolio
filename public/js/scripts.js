@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initial check in case content is already scrolled
   checkScroll();
-
+// smily jumpy
   var shortAbout = document.querySelector(".portfolio-me span");
   var smily = document.querySelector(".portfolio-me a i");
 
