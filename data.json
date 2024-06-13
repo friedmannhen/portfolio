@@ -53,6 +53,23 @@
                 "/static/images/sort1.png",
                 "/static/images/sort2.png"
             ]
+        },
+        {
+            "id": "legacy-portfolio",
+            "project_name": "legacy-portfolio",
+            "description": ["This is a legacy-portfolio! I used this repository as a place to study and save my work as I progress."],
+            "technologies": [
+                "javaScript",
+                "html",
+                "css"
+            ],
+            "live_link": "https://friedmann-legacy.netlify.app",
+            "github_link": "https://github.com/friedmannhen/Legacy-Portfolio",
+            "image_urls": [
+                "/static/images/legacyMain.png",
+                "/static/images/legacy1.png",
+                "/static/images/legacy2.png"
+            ]
         }
     ]
 }
