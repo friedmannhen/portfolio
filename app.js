@@ -1,8 +1,8 @@
 // Import dependencies and routes
 const express = require("express");
-const indexRoutes = require("../routes");
-const aboutRoutes = require("../routes/about");
-const projectRoutes = require("../routes/project");
+const indexRoutes = require("./routes");
+const aboutRoutes = require("./routes/about");
+const projectRoutes = require("./routes/project");
 
 //for netlify
 const serverless = require("serverless-http");
@@ -11,7 +11,7 @@ const serverless = require("serverless-http");
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.set("views", "../views");
+app.set("views", "./views");
 app.set("view engine", "pug");
 
 //for netlify
@@ -22,7 +22,7 @@ module.exports.handler = serverless(app);
 // Set view engine to Pug
 
 // Serve static files
-app.use("/static", express.static("../public"));
+app.use("/static", express.static("./public"));
 
 // Routes
 app.use(indexRoutes);

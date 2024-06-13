@@ -4,7 +4,10 @@
   "description": "Portfolio created with Express",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify-lambda build express",
+    "start": "node app.js",
+    "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
   "engines": {
     "node": "11.6.0"
@@ -13,11 +16,17 @@
     "type": "git",
     "url": "https://github.com/friedmannhen/portfolio"
   },
+  "keywords": [
+    "netlify",
+    "express.js"
+  ],
   "author": "Hen Friedmann",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
     "netlify-lambda": "^2.0.16",
     "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
     "serverless-http": "^3.2.0"
   },
   "devDependencies": {
