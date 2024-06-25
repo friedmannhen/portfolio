@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "netlify-lambda build express",
+    "build": "",
     "start": "node app.js",
     "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
@@ -24,12 +24,10 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
-    "netlify-lambda": "^2.0.16",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6",
-    "serverless-http": "^3.2.0"
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "nodemon": "^3.1.4"
   }
 }
