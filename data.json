@@ -29,7 +29,7 @@
                 "html",
                 "css"
             ],
-            "live_link": "friedmann-bingo.netlify.app/",
+            "live_link": "https://friedmann-bingo.netlify.app/",
             "github_link": "https://github.com/friedmannhen/Bingo",
             "image_urls": [
                 "/static/images/bingoMain.png",
